@@ -79,10 +79,6 @@ efa4 <- run_efa(data_EFA, group4, nfactors = NULL, rotation = "geominT")
 efa5 <- run_efa(data_EFA, group5, nfactors = NULL, rotation = "geominT")
 efa6 <- run_efa(data_EFA, group6, nfactors = NULL, rotation = "geominT")
 
-pdf("group1.pdf", width = 10, height = 8)
-fa.diagram(efa1)
-dev.off()
-fa.rgraph(efa1)
 ## Define CFA models ##
 
 # Group 1: Intended Effort and Attitudes to Learning English
