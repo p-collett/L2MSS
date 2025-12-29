@@ -70,8 +70,14 @@ run_efa <- function(data, cols, nfactors = NULL, rotation = "geominT") {
   invisible(efa_result)
 }
 
+# Do EFA analysis. This uses the number of factors determined by parallel analysis
 
-efa1 <- run_efa(data_EFA, group1, nfactors = 2, rotation = "geominT")
+efa1 <- run_efa(data_EFA, group1, nfactors = NULL, rotation = "geominT")
+efa2 <- run_efa(data_EFA, group2, nfactors = NULL, rotation = "geominT")
+efa3 <- run_efa(data_EFA, group3, nfactors = NULL, rotation = "geominT")
+efa4 <- run_efa(data_EFA, group4, nfactors = NULL, rotation = "geominT")
+efa5 <- run_efa(data_EFA, group5, nfactors = NULL, rotation = "geominT")
+efa6 <- run_efa(data_EFA, group6, nfactors = NULL, rotation = "geominT")
 
 pdf("group1.pdf", width = 10, height = 8)
 fa.diagram(efa1)
